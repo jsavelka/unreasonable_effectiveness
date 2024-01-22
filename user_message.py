@@ -10,6 +10,6 @@ Snippet 3: <LABEL>
 
 def generate_user_message(texts, num_start=1):
     return 'SENTENCES\n' + '\n'.join(
-        f'Snippet {i}: {text}\n' 
+        f'Snippet {i}: {text}' 
         for i, text in enumerate(texts, start=num_start)
     ) + '\n\n' + EXPECTED_OUTPUT_STR
